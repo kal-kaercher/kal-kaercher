@@ -1,0 +1,63 @@
+Top 3
+Get-Command
+Get-Help
+Get-Member
+
+
+get-verb -verb block | format-list
+get-verb -verb block
+
+
+Handy
+Add-AzADGroupMemberGet-AzResourceGroup | format-list
+Export-Csv
+get-help
+
+
+#example
+Install-Module -Name AppBackgroundTask, Appx, -Force
+
+
+Update-Help
+save-help -destinationpath C:\Users\kalka\OneDrive\Azure\PowerShell\HelpII -force
+help get-service -examples
+help get-service -Full
+help *about*
+Set-Location
+
+
+#webLinks
+start https://stackoverflow.com/questions/61184656/how-to-use-azurerm-module-with-powershell-7
+start https://docs.microsoft.com/en-us/powershell/azure/new-azureps-module-az?view=azps-2.8.0
+
+
+New-AzResourceGroupNew
+Disconnect-AzAccount
+Update-Help -Verbose -Force
+Get-CimInstance Win64_OperatingSystem
+
+
+# azcopy
+$userenv = [system.environment]::getenvironmentvariable("path", "user")
+[system.environment]::setenvironmentvariable("PATH", $userenv + "C:\Users\kalka\.Azure\azcopy_windows_amd64_10.11.0", "user")
+# ----------
+azcopy list "https://testazcopy11.blob.core.windows.net/azcopytestcontainer?sp=r&st=2021-07-08T20:26:16Z&se=2021-07-09T04:26:16Z&spr=https&sv=2020-08-04&sr=c&sig=wnbOJbkDX1zjxljH7FooxEff3J9gctKoQMg5C4enhKo%%3D/sp=r&st=2021-07-08T20:26:16Z&se=2021-07-09T04:26:16Z&spr=https&sv=2020-08-04&sr=c&sig=wnbOJbkDX1zjxljH7FooxEff3J9gctKoQMg5C4enhKo%%3D"
+# note for sas - % needs to be changed to %% sometimes!!!
+azcopy cp "C:\Users\kalka\Ubiquiti UniFi\data\firmware.json" "https://azkaltestcopy.blob.core.windows.net/container-test-test-we-001?sp=racwdl&st=2021-07-09T13:08:55Z&se=2021-07-09T21:08:55Z&sv=2020-08-04&sr=c&sig=PI9IqgMDMY3gsNBikUcPg78YUwzOprF8anXs4v8w
+
+
+# github
+git config --global user.name "kal-kaercher"
+git clone "https://github.com/kal-kaercher/kals-azure.git"
+git clone "https://github.com/kal-kaercher/kals-azure.git"
+
+
+C:\Users\kalka\OneDrive\Azure\GitHub\kals-azure\PowerShell\Learning PS  Notes
+
+Connect-ExchangeOnline -UserPrincipalName kal.kaercher@outlook.com [-ShowBanner:$false] [-ExchangeEnvironmentName <Value>] [-DelegatedOrganization <String>] [-PSSessionOption $ProxyOptions]"
+
+Connect-ExchangeOnline -UserPrincipalName kal.kaercher@outlook.com
+
+install-module AzureAD
+install-module AzureADPreview
+install-module MSOnline
